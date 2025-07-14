@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Blood Request Form</title>
+  <link rel="stylesheet" href="blood.css" />
+</head>
+<body>
+  <div class="container">
+    <h2>New Blood Request</h2>
+
+    <div class="toggle-buttons">
+      <button class="toggle-option active" data-type="Blood">Blood</button>
+      <button class="toggle-option" data-type="Platelets">Platelets</button>
+    </div>
+
+    <form id="bloodForm">
+      <div class="row">
+        <div class="field">
+          <label for="bloodgroup">Blood Group</label>
+          <select id="bloodgroup" required>
+            <option value="">-- Select --</option>
+            <option>A+</option>
+            <option>A-</option>
+            <option>B+</option>
+            <option>B-</option>
+            <option>O+</option>
+            <option>O-</option>
+            <option>AB+</option>
+            <option>AB-</option>
+            <option>Bombay Blood Group</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label for="units">Number of Units</label>
+          <input type="number" id="units" placeholder="e.g. 2" min="1" required />
+        </div>
+
+        <div class="field">
+          <label for="needby">Need By</label>
+          <input type="date" id="needby" required />
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="field">
+          <label>Patient Gender</label>
+          <div class="gender-options">
+            <label><input type="radio" name="gender" value="Male" required /> Male</label>
+            <label><input type="radio" name="gender" value="Female" /> Female</label>
+            <label><input type="radio" name="gender" value="Others" /> Others</label>
+          </div>
+        </div>
+
+        <div class="field">
+          <label for="age">Patient Age</label>
+          <input type="number" id="age" placeholder="e.g. 26" min="1" required />
+        </div>
+
+        <div class="field">
+          <label for="reason">Needed For</label>
+          <input type="text" id="reason" placeholder="Reason (e.g., Surgery)" required />
+        </div>
+      </div>
+
+      <button type="submit" class="post-btn">Post Request</button>
+    </form>
+  </div>
+
+  <script src="blood.js"></script>
+</body>
+</html>
