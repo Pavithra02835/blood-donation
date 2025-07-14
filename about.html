@@ -1,0 +1,133 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About | BloodCare+</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-image:url(bg1.jpg);
+      background-size: cover;
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      min-height: 100vh;
+      
+    }
+
+    /* Navbar */
+    .navbar {
+      background-color: #fff;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 999;
+    }
+
+    .nav-container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 20px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+      color: #c0392b;
+    }
+
+    .nav-links {
+      display: flex;
+      list-style: none;
+      gap: 25px;
+    }
+
+    .nav-links li a {
+      text-decoration: none;
+      color: #c0392b;
+      font-weight: bold;
+      font-size: 16px;
+      transition: color 0.3s ease;
+    }
+
+    .nav-links li a:hover,
+    .nav-links li a.active {
+      color: #e74c3c;
+    }
+
+    /* About Content */
+    .about-section {
+      margin-top: 100px;
+      background-color: rgba(255, 255, 255, 0.9);
+      max-width: 900px;
+      padding: 70px;
+      margin-left: auto;
+      margin-right: auto;
+      border-radius: 20px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    }
+
+    .about-section h1 {
+      text-align: center;
+      color: #c0392b;
+      margin-bottom: 20px;
+    }
+
+    .about-section p {
+      font-size: 18px;
+      margin-bottom: 15px;
+      text-align: justify;
+    }
+
+    @media (max-width: 600px) {
+      .about-section {
+        padding: 20px;
+      }
+
+      .about-section h1 {
+        font-size: 26px;
+      }
+
+      .about-section p {
+        font-size: 16px;
+      }
+    }
+  </style>
+</head>
+<body style="background-color: lightcoral;">
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="logo">BloodCare+</div>
+      <ul class="nav-links">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="#" class="active">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- About Content -->
+  <div class="about-section">
+    <h1>About BloodCare+</h1>
+    <p><strong>BloodCare+</strong> is a life-saving initiative built with a mission to connect blood donors with those in need, quickly and efficiently. We believe that no life should be lost due to a lack of timely access to blood.</p>
+    
+    <p>Through a user-friendly platform, we empower individuals and hospitals to request and donate blood with ease. Our real-time request system helps reduce the gap between donors and recipients, ensuring a faster response time in emergencies.</p>
+    
+    <p>Whether you're a volunteer, a donor, or someone in need — BloodCare+ stands with you in moments that matter most. Join us in spreading awareness, saving lives, and building a healthier society.</p>
+  </div>
+
+</body>
+</html>
